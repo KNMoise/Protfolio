@@ -199,15 +199,16 @@ p {
 }
 /* End Header section */
 
-/* Hero Section */
-#hero {
-	background-image: url(./img/moise-bg.jpg);
+/* home Section */
+#home {
+	float: center;
+	background-image: url(./img/home.jpg);
 	background-size: cover;
 	background-position: top center;
 	position: relative;
 	z-index: 1;
 }
-#hero::after {
+#home::after {
 	content: '';
 	position: absolute;
 	left: 0;
@@ -219,13 +220,13 @@ p {
 	z-index: -1;
 	
 }
-#hero .hero {
+#home .home {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 50px;
 	justify-content: flex-start;
 }
-#hero h1 {
+#home h1 {
 	display: block;
 	width: fit-content;
 	font-size: 4rem;
@@ -234,17 +235,17 @@ p {
 	animation: text_reveal 0.5s ease forwards;
 	animation-delay: 1s;
 }
-#hero h1:nth-child(1) {
+#home h1:nth-child(1) {
 	animation-delay: 1s;
 }
-#hero h1:nth-child(2) {
+#home h1:nth-child(2) {
 	animation-delay: 2s;
 }
-#hero h1:nth-child(3) {
+#home h1:nth-child(3) {
 	animation: text_reveal_name 0.5s ease forwards;
 	animation-delay: 3s;
 }
-#hero h1 span {
+#home h1 span {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -254,17 +255,17 @@ p {
 	animation: text_reveal_box 1s ease;
 	animation-delay: 0.5s;
 }
-#hero h1:nth-child(1) span {
+#home h1:nth-child(1) span {
 	animation-delay: 0.5s;
 }
-#hero h1:nth-child(2) span {
+#home h1:nth-child(2) span {
 	animation-delay: 1.5s;
 }
-#hero h1:nth-child(3) span {
+#home h1:nth-child(3) span {
 	animation-delay: 2.5s;
 }
 
-/* End Hero Section */
+/* End home Section */
 
 /* Services Section */
 #services .services {
@@ -328,23 +329,23 @@ p {
 }
 /* End Services Section */
 
-/* Projects section */
-#projects .projects {
+/* Protfolio section */
+#Protfolio .Protfolio {
 	flex-direction: column;
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 100px 0;
 }
-#projects .projects-header h1 {
+#Protfolio .Protfolio-header h1 {
 	margin-bottom: 50px;
 }
-#projects .all-projects {
+#Protfolio .all-Protfolio {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
 }
-#projects .project-item {
+#Protfolio .Protfolio-item {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -354,7 +355,7 @@ p {
 	overflow: hidden;
 	border-radius: 10px;
 }
-#projects .project-info {
+#Protfolio .Protfolio-info {
 	padding: 30px;
 	flex-basis: 50%;
 	height: 100%;
@@ -365,25 +366,25 @@ p {
 	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 	color: white;
 }
-#projects .project-info h1 {
+#Protfolio .Protfolio-info h1 {
 	font-size: 4rem;
 	font-weight: 500;
 }
-#projects .project-info h2 {
+#Protfolio .Protfolio-info h2 {
 	font-size: 1.8rem;
 	font-weight: 500;
 	margin-top: 10px;
 }
-#projects .project-info p {
+#Protfolio .Protfolio-info p {
 	color: rgb(255, 255, 255);
 }
-#projects .project-img {
+#Protfolio .Protfolio-img {
 	flex-basis: 50%;
 	height: 300px;
 	overflow: hidden;
 	position: relative;
 }
-#projects .project-img:after {
+#Protfolio .Protfolio-img:after {
 	content: '';
 	position: absolute;
 	left: 0;
@@ -393,13 +394,13 @@ p {
 	background-image: linear-gradient(60deg, #33475e 0%, #9fb6cf 100%);
 	opacity: 0.7;
 }
-#projects .project-img img {
+#Protfolio .Protfolio-img img {
 	transition: 0.3s ease transform;
 }
-#projects .project-item:hover .project-img img {
+#Protfolio .Protfolio-item:hover .Protfolio-img img {
 	transform: scale(1.1);
 }
-/* End Projects section */
+/* End Protfolio section */
 
 /* About Section */
 #about .about {
@@ -492,6 +493,21 @@ p {
 	line-height: 2rem;
 	font-weight: 500;
 }
+.input
+ {
+	margin-left: 100px;
+}
+	input[type="text"] 
+	{
+		padding: 12px;
+		border: none;
+		background-color:rgb(46, 58, 92); 
+		border-radius: 40px;
+		font-size: 12px;
+		color:white;
+	   
+		
+	}
 /*End contact Section */
 
 /* Footer */
@@ -578,11 +594,11 @@ p {
 		font-size: 6rem;
 	}
 
-	/* Hero */
-	#hero h1 {
+	/* home */
+	#home h1 {
 		font-size: 7rem;
 	}
-	/* End Hero */
+	/* End home */
 
 	/* Services Section */
 	#services .service-bottom .service-item {
@@ -591,26 +607,26 @@ p {
 	}
 	/* End Services Section */
 
-	/* Project */
-	#projects .project-item {
+	/* Protfolio */
+	#Protfolio .Protfolio-item {
 		flex-direction: row;
 	}
-	#projects .project-item:nth-child(even) {
+	#Protfolio .Protfolio-item:nth-child(even) {
 		flex-direction: row-reverse;
 	}
-	#projects .project-item {
+	#Protfolio .Protfolio-item {
 		height: 400px;
 		margin: 0;
 		width: 100%;
 		border-radius: 0;
 	}
-	#projects .all-projects .project-info {
+	#Protfolio .all-Protfolio .Protfolio-info {
 		height: 100%;
 	}
-	#projects .all-projects .project-img {
+	#Protfolio .all-Protfolio .Protfolio-img {
 		height: 100%;
 	}
-	/* End Project */
+	/* End Protfolio */
 
 	/* About */
 	#about .about {
@@ -707,5 +723,185 @@ p {
 		flex-basis: 22%;
 		margin: 1.5%;
 	}
+	/*---------------------- starts here ---follow me icons on footer----------------*/
 }
-/* End  Media Query For Desktop */
+.social-icons {
+    margin: 0;
+    padding: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+  
+  .social-icons li {
+    margin: 2px 6px;
+    padding: 0;
+    overflow: visible;
+  }
+  
+  .social-icons li a {
+    display: block;
+    height: 26px;
+    line-height: 26px;
+    width: 26px;
+    font-size: 18px;
+    text-align: center;
+    color: #4d555a;
+    text-decoration: none;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+  
+  .social-icons li i {
+    line-height: inherit;
+  }
+  
+  .social-icons.social-icons-sm li {
+    margin: 2px 4px;
+  }
+  
+  .social-icons.social-icons-sm li a {
+    font-size: 14px;
+  }
+  
+  .social-icons.social-icons-lg li a {
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    font-size: 22px;
+  }
+  
+  .social-icons.social-icons-light li a {
+    color: #eee;
+  }
+  
+  .social-icons.social-icons-muted li a {
+    color: #aab1b8;
+  }
+  
+  .social-icons li:hover a {
+    color: #999;
+  }
+  
+  .social-icons li:hover.social-icons-twitter a, .social-icons.social-icons-colored li.social-icons-twitter a {
+    color: #00ACEE;
+  }
+  
+  .social-icons li:hover.social-icons-facebook a, .social-icons.social-icons-colored li.social-icons-facebook a {
+    color: #3B5998;
+  }
+  
+  .social-icons li:hover.social-icons-linkedin a, .social-icons.social-icons-colored li.social-icons-linkedin a {
+    color: #0E76A8;
+  }
+  
+  .social-icons li:hover.social-icons-rss a, .social-icons.social-icons-colored li.social-icons-rss a {
+    color: #EE802F;
+  }
+  
+  .social-icons li:hover.social-icons-dribbble a, .social-icons.social-icons-colored li.social-icons-dribbble a {
+    color: #ea4c89;
+  }
+  
+  .social-icons li:hover.social-icons-github a, .social-icons.social-icons-colored li.social-icons-github a {
+    color: #333333;
+  }
+  
+  .social-icons li:hover.social-icons-behance a, .social-icons.social-icons-colored li.social-icons-behance a {
+    color: #053eff;
+  }
+  
+  .social-icons li:hover.social-icons-google a, .social-icons.social-icons-colored li.social-icons-google a {
+    color: #DD4B39;
+  }
+  
+  .social-icons li:hover.social-icons-pinterest a, .social-icons.social-icons-colored li.social-icons-pinterest a {
+    color: #cc2127;
+  }
+  
+  .social-icons li:hover.social-icons-youtube a, .social-icons.social-icons-colored li.social-icons-youtube a {
+    color: #C4302B;
+  }
+  
+  .social-icons li:hover.social-icons-instagram a, .social-icons.social-icons-colored li.social-icons-instagram a {
+    color: #3F729B;
+  }
+  
+  .social-icons li:hover.social-icons-skype a, .social-icons.social-icons-colored li.social-icons-skype a {
+    color: #00AFF0;
+  }
+  
+  .social-icons li:hover.social-icons-email a, .social-icons.social-icons-colored li.social-icons-email a {
+    color: #6567A5;
+  }
+  
+  .social-icons li:hover.social-icons-vk a, .social-icons.social-icons-colored li.social-icons-vk a {
+    color: #2B587A;
+  }
+  
+  .social-icons li:hover.social-icons-xing a, .social-icons.social-icons-colored li.social-icons-xing a {
+    color: #126567;
+  }
+  
+  .social-icons li:hover.social-icons-tumblr a, .social-icons.social-icons-colored li.social-icons-tumblr a {
+    color: #34526F;
+  }
+  
+  .social-icons li:hover.social-icons-reddit a, .social-icons.social-icons-colored li.social-icons-reddit a {
+    color: #C6C6C6;
+  }
+  
+  .social-icons li:hover.social-icons-delicious a, .social-icons.social-icons-colored li.social-icons-delicious a {
+    color: #205CC0;
+  }
+  
+  .social-icons li:hover.social-icons-stumbleupon a, .social-icons.social-icons-colored li.social-icons-stumbleupon a {
+    color: #F74425;
+  }
+  
+  .social-icons li:hover.social-icons-digg a, .social-icons.social-icons-colored li.social-icons-digg a {
+    color: #191919;
+  }
+  
+  .social-icons li:hover.social-icons-blogger a, .social-icons.social-icons-colored li.social-icons-blogger a {
+    color: #FC4F08;
+  }
+  
+  .social-icons li:hover.social-icons-flickr a, .social-icons.social-icons-colored li.social-icons-flickr a {
+    color: #FF0084;
+  }
+  
+  .social-icons li:hover.social-icons-vimeo a, .social-icons.social-icons-colored li.social-icons-vimeo a {
+    color: #86C9EF;
+  }
+  
+  .social-icons li:hover.social-icons-yahoo a, .social-icons.social-icons-colored li.social-icons-yahoo a {
+    color: #720E9E;
+  }
+  
+  .social-icons li:hover.social-icons-apple a, .social-icons.social-icons-colored li.social-icons-apple a {
+    color: #000;
+  }
+  
+  .social-icons.social-icons-colored li:hover a {
+    color: #999;
+  }
+  
+  body:not(.rtl) .social-icons li:first-child {
+    margin-left: 0px;
+  }
+  
+  body:not(.rtl) .social-icons li:last-child {
+    margin-right: 0px;
+  }
+  
+  .rtl .social-icons li:first-child {
+    margin-right: 0px;
+  }
+  
+  .rtl .social-icons li:last-child {
+    margin-left: 0px;
+  }
+/*---------------------- starts here ---follow me icons on footer---------------- */
