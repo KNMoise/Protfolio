@@ -23,3 +23,9 @@ menu_item.forEach((item) => {
 		mobile_menu.classList.toggle('active');
 	});
 });
+function openForm() {
+	document.getElementById("myForm").style.display = "block";
+}
+    function closeForm() {
+	document.getElementById("myForm").style.display = "none";
+}

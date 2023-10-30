@@ -1,18 +1,25 @@
 @import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
 
+body {
+    background-color: #138eda2f;
+}
+
 * {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
 }
+
 html {
 	font-size: 10px;
 	font-family: 'Montserrat', sans-serif;
 	scroll-behavior: smooth;
 }
+
 a {
 	text-decoration: none;
 }
+
 .container {
 	min-height: 100vh;
 	width: 100%;
@@ -20,11 +27,13 @@ a {
 	align-items: center;
 	justify-content: center;
 }
+
 img {
 	height: 100%;
 	width: 100%;
 	object-fit: cover;
 }
+
 p {
 	color: black;
 	font-size: 1.4rem;
@@ -33,6 +42,7 @@ p {
 	font-weight: 300;
 	letter-spacing: 0.05rem;
 }
+
 .section-title {
 	font-size: 4rem;
 	font-weight: 300;
@@ -42,6 +52,7 @@ p {
 	letter-spacing: 0.2rem;
 	text-align: center;
 }
+
 .section-title span {
 	color: rgb(50, 142, 179);
 }
@@ -59,15 +70,18 @@ p {
 	transition: 0.3s ease;
 	transition-property: background-color, color;
 }
+
 .cta:hover {
 	color: white;
 	background-color: rgb(50, 142, 179);
 }
+
 .brand h1 {
 	font-size: 3rem;
 	text-transform: uppercase;
 	color: white;
 }
+
 .brand h1 span {
 	color: rgb(50, 142, 179);
 }
@@ -81,11 +95,13 @@ p {
 	width: 100vw;
 	height: auto;
 }
+
 #header .header {
 	min-height: 8vh;
 	background-color: rgba(31, 30, 30, 0.24);
 	transition: 0.3s ease background-color;
 }
+
 #header .nav-bar {
 	display: flex;
 	align-items: center;
@@ -95,6 +111,7 @@ p {
 	max-width: 1300px;
 	padding: 0 10px;
 }
+
 #header .nav-list ul {
 	list-style: none;
 	position: absolute;
@@ -111,9 +128,11 @@ p {
 	overflow-x: hidden;
 	transition: 0.5s ease left;
 }
+
 #header .nav-list ul.active {
 	left: 0%;
 }
+
 #header .nav-list ul a {
 	font-size: 2.5rem;
 	font-weight: 500;
@@ -124,6 +143,7 @@ p {
 	padding: 20px;
 	display: block;
 }
+
 #header .nav-list ul a::after {
 	content: attr(data-after);
 	position: absolute;
@@ -136,13 +156,16 @@ p {
 	z-index: -1;
 	transition: 0.3s ease letter-spacing;
 }
+
 #header .nav-list ul li:hover a::after {
 	transform: translate(-50%, -50%) scale(1);
 	letter-spacing: initial;
 }
+
 #header .nav-list ul li:hover a {
 	color: rgb(50, 142, 179);
 }
+
 #header .hamburger {
 	height: 60px;
 	width: 60px;
@@ -158,6 +181,7 @@ p {
 	transform: scale(0.8);
 	margin-right: 20px;
 }
+
 #header .hamburger:after {
 	position: absolute;
 	content: '';
@@ -167,6 +191,7 @@ p {
 	border: 3px solid white;
 	animation: hamburger_puls 1s ease infinite;
 }
+
 #header .hamburger .bar {
 	height: 2px;
 	width: 30px;
@@ -174,6 +199,7 @@ p {
 	background-color: rgb(13, 44, 51);
 	z-index: -1;
 }
+
 #header .hamburger .bar::after,
 #header .hamburger .bar::before {
 	content: '';
@@ -185,18 +211,23 @@ p {
 	transition: 0.3s ease;
 	transition-property: top, bottom;
 }
+
 #header .hamburger .bar::after {
 	top: 8px;
 }
+
 #header .hamburger .bar::before {
 	bottom: 8px;
 }
+
 #header .hamburger.active .bar::before {
 	bottom: 0;
 }
+
 #header .hamburger.active .bar::after {
 	top: 0;
 }
+
 /* End Header section */
 
 /* home Section */
@@ -208,6 +239,7 @@ p {
 	position: relative;
 	z-index: 1;
 }
+
 #home::after {
 	content: '';
 	position: absolute;
@@ -218,14 +250,16 @@ p {
 	background-color: black;
 	opacity: 0.7;
 	z-index: -1;
-	
+
 }
+
 #home .home {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 50px;
 	justify-content: flex-start;
 }
+
 #home h1 {
 	display: block;
 	width: fit-content;
@@ -235,16 +269,20 @@ p {
 	animation: text_reveal 0.5s ease forwards;
 	animation-delay: 1s;
 }
+
 #home h1:nth-child(1) {
 	animation-delay: 1s;
 }
+
 #home h1:nth-child(2) {
 	animation-delay: 2s;
 }
+
 #home h1:nth-child(3) {
 	animation: text_reveal_name 0.5s ease forwards;
 	animation-delay: 3s;
 }
+
 #home h1 span {
 	position: absolute;
 	top: 0;
@@ -255,12 +293,15 @@ p {
 	animation: text_reveal_box 1s ease;
 	animation-delay: 0.5s;
 }
+
 #home h1:nth-child(1) span {
 	animation-delay: 0.5s;
 }
+
 #home h1:nth-child(2) span {
 	animation-delay: 1.5s;
 }
+
 #home h1:nth-child(3) span {
 	animation-delay: 2.5s;
 }
@@ -275,10 +316,12 @@ p {
 	margin: 0 auto;
 	padding: 100px 0;
 }
+
 #services .service-top {
 	max-width: 500px;
 	margin: 0 auto;
 }
+
 #services .service-bottom {
 	display: flex;
 	align-items: center;
@@ -286,6 +329,7 @@ p {
 	flex-wrap: wrap;
 	margin-top: 50px;
 }
+
 #services .service-item {
 	flex-basis: 80%;
 	display: flex;
@@ -301,6 +345,7 @@ p {
 	z-index: 1;
 	overflow: hidden;
 }
+
 #services .service-item::after {
 	content: '';
 	position: absolute;
@@ -312,21 +357,25 @@ p {
 	opacity: 0.9;
 	z-index: -1;
 }
+
 #services .service-bottom .icon {
 	height: 80px;
 	width: 80px;
 	margin-bottom: 20px;
 }
+
 #services .service-item h2 {
 	font-size: 2rem;
 	color: white;
 	margin-bottom: 10px;
 	text-transform: uppercase;
 }
+
 #services .service-item p {
 	color: white;
 	text-align: left;
 }
+
 /* End Services Section */
 
 /* Protfolio section */
@@ -336,15 +385,18 @@ p {
 	margin: 0 auto;
 	padding: 100px 0;
 }
+
 #Protfolio .Protfolio-header h1 {
 	margin-bottom: 50px;
 }
+
 #Protfolio .all-Protfolio {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
 }
+
 #Protfolio .Protfolio-item {
 	display: flex;
 	align-items: center;
@@ -355,6 +407,7 @@ p {
 	overflow: hidden;
 	border-radius: 10px;
 }
+
 #Protfolio .Protfolio-info {
 	padding: 30px;
 	flex-basis: 50%;
@@ -366,24 +419,29 @@ p {
 	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 	color: white;
 }
+
 #Protfolio .Protfolio-info h1 {
 	font-size: 4rem;
 	font-weight: 500;
 }
+
 #Protfolio .Protfolio-info h2 {
 	font-size: 1.8rem;
 	font-weight: 500;
 	margin-top: 10px;
 }
+
 #Protfolio .Protfolio-info p {
 	color: rgb(255, 255, 255);
 }
+
 #Protfolio .Protfolio-img {
 	flex-basis: 50%;
 	height: 300px;
 	overflow: hidden;
 	position: relative;
 }
+
 #Protfolio .Protfolio-img:after {
 	content: '';
 	position: absolute;
@@ -394,12 +452,15 @@ p {
 	background-image: linear-gradient(60deg, #33475e 0%, #9fb6cf 100%);
 	opacity: 0.7;
 }
+
 #Protfolio .Protfolio-img img {
 	transition: 0.3s ease transform;
 }
+
 #Protfolio .Protfolio-item:hover .Protfolio-img img {
 	transform: scale(1.1);
 }
+
 /* End Protfolio section */
 
 /* About Section */
@@ -410,34 +471,41 @@ p {
 	margin: 0 auto;
 	padding: 100px 20px;
 }
+
 #about .col-left {
 	width: 250px;
 	height: 360px;
 }
+
 #about .col-right {
 	width: 100%;
 }
+
 #about .col-right h2 {
 	font-size: 1.8rem;
 	font-weight: 500;
 	letter-spacing: 0.2rem;
 	margin-bottom: 10px;
 }
+
 #about .col-right p {
 	margin-bottom: 20px;
 }
+
 #about .col-right .cta {
 	color: black;
 	margin-bottom: 50px;
 	padding: 10px 20px;
 	font-size: 2rem;
 }
+
 #about .col-left .about-img {
 	height: 100%;
 	width: 100%;
 	position: relative;
 	border: 10px solid white;
 }
+
 #about .col-left .about-img::after {
 	content: '';
 	position: absolute;
@@ -448,37 +516,92 @@ p {
 	border: 7px solid rgb(50, 142, 179);
 	z-index: -1;
 }
+
 /* End About Section */
 
 
-  
-.input
- {
+
+.input {
 	margin-left: 100px;
 }
-	input[type="text"] 
-	{
-		padding: 12px;
-		border: none;
-		background-color:rgb(46, 58, 92); 
-		border-radius: 40px;
-		font-size: 12px;
-		color:white;
-	   
-		
-	}
+
+input[type="text"] {
+	padding: 12px;
+	border: none;
+	/* background-color:rgb(50, 142, 179);  */
+	border-radius: 40px;
+	font-size: 12px;
+	color: white;
+
+}
+
 /*End contact Section */
+/* Style inputs with type="text", select elements and textareas */
+input[type=text],
+select,
+textarea {
+	width: 100%;
+	/* Full width */
+	padding: 12px;
+	/* Some padding */
+	border: 1px solid #ccc;
+	/* Gray border */
+	border-radius: 4px;
+	/* Rounded borders */
+	box-sizing: border-box;
+	/* Make sure that padding and width stays in place */
+	margin-top: 6px;
+	/* Add a top margin */
+	margin-bottom: 16px;
+	/* Bottom margin */
+	resize: vertical
+		/* Allow the user to vertically resize the textarea (not horizontally) */
+}
+form {
+    background-color: rgb(28, 61, 71);
+    padding: 20px;
+    border-radius: 10px;
+    width: flex;
+    margin: 0 auto;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+	background-color: #0a0b0b;
+	color: white;
+	padding: 15px;
+	margin: 20px auto 0;
+	border: none;
+	border-radius: 15px;
+	width: 150px;
+	outline: none;
+	cursor: pointer;
+}
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+	background-color: rgb(50, 142, 179);
+}
+
+/* Add a background color and some padding around the form */
+.container {
+	border-radius: 5px;
+	padding: 20px;
+	
+}
 
 /* Footer */
 #footer {
 	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+
 }
+
 #footer .footer {
 	min-height: 200px;
 	flex-direction: column;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
+
 #footer h2 {
 	color: rgb(255, 255, 255);
 	font-weight: 500;
@@ -487,26 +610,32 @@ p {
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
+
 #footer .social-icon {
 	display: flex;
 	margin-bottom: 30px;
 }
+
 #footer .social-item {
 	height: 50px;
 	width: 60px;
 	margin: 0 5px;
 }
+
 #footer .social-item img {
 	filter: grayscale(1);
 	transition: 0.3s ease filter;
 }
+
 #footer .social-item:hover img {
 	filter: grayscale(0);
 }
+
 #footer p {
 	color: white;
 	font-size: 1.3rem;
 }
+
 /* End Footer */
 
 /* Keyframes */
@@ -515,32 +644,38 @@ p {
 		opacity: 1;
 		transform: scale(1);
 	}
+
 	100% {
 		opacity: 0;
 		transform: scale(1.4);
 	}
 }
+
 @keyframes text_reveal_box {
 	50% {
 		width: 100%;
 		left: 0;
 	}
+
 	100% {
 		width: 0;
 		left: 100%;
 	}
 }
+
 @keyframes text_reveal {
 	100% {
 		color: white;
 	}
 }
+
 @keyframes text_reveal_name {
 	100% {
 		color: rgb(50, 142, 179);
 		font-weight: 500;
 	}
 }
+
 /* End Keyframes */
 
 /* Media Query For Tablet */
@@ -549,6 +684,7 @@ p {
 		font-size: 2.5rem;
 		padding: 20px 60px;
 	}
+
 	h1.section-title {
 		font-size: 6rem;
 	}
@@ -557,6 +693,7 @@ p {
 	#home h1 {
 		font-size: 7rem;
 	}
+
 	/* End home */
 
 	/* Services Section */
@@ -564,38 +701,46 @@ p {
 		flex-basis: 45%;
 		margin: 2.5%;
 	}
+
 	/* End Services Section */
 
 	/* Protfolio */
 	#Protfolio .Protfolio-item {
 		flex-direction: row;
 	}
+
 	#Protfolio .Protfolio-item:nth-child(even) {
 		flex-direction: row-reverse;
 	}
+
 	#Protfolio .Protfolio-item {
 		height: 400px;
 		margin: 0;
 		width: 100%;
 		border-radius: 0;
 	}
+
 	#Protfolio .all-Protfolio .Protfolio-info {
 		height: 100%;
 	}
+
 	#Protfolio .all-Protfolio .Protfolio-img {
 		height: 100%;
 	}
+
 	/* End Protfolio */
 
 	/* About */
 	#about .about {
 		flex-direction: row;
 	}
+
 	#about .col-left {
 		width: 600px;
 		height: 400px;
 		padding-left: 60px;
 	}
+
 	#about .about .col-left .about-img::after {
 		left: -45px;
 		top: 34px;
@@ -603,15 +748,17 @@ p {
 		width: 98%;
 		border: 10px solid rgb(50, 142, 179);
 	}
+
 	#about .col-right {
 		text-align: left;
 		padding: 30px;
 	}
+
 	#about .col-right h1 {
 		text-align: left;
 	}
-	#about .col-right.btn 
-	{
+
+	#about .col-right.btn {
 		text-align: left;
 		padding: 30px;
 	}
@@ -626,6 +773,7 @@ p {
 		justify-content: center;
 		min-width: 20vh;
 	}
+
 	#contact .contact-items {
 		width: 100%;
 		display: flex;
@@ -633,33 +781,41 @@ p {
 		justify-content: space-evenly;
 		margin: 0;
 	}
+
 	#contact .contact-item {
 		width: 30%;
 		margin: 0;
 		flex-direction: row;
 	}
+
 	#contact .contact-item .icon {
 		height: 100px;
 		width: 100px;
 	}
+
 	#contact .contact-item .icon img {
 		object-fit: contain;
 	}
+
 	#contact .contact-item .contact-info {
 		width: 100%;
 		text-align: left;
 		padding-left: 20px;
 	}
+
 	/* End contact  */
 }
+
 /* End Media Query For Tablet */
 
 /* Media Query For Desktop */
 @media only screen and (min-width: 1200px) {
+
 	/* header */
 	#header .hamburger {
 		display: none;
 	}
+
 	#header .nav-list ul {
 		position: initial;
 		display: block;
@@ -667,200 +823,263 @@ p {
 		width: fit-content;
 		background-color: transparent;
 	}
+
 	#header .nav-list ul li {
 		display: inline-block;
 	}
+
 	#header .nav-list ul li a {
 		font-size: 1.8rem;
 	}
+
 	#header .nav-list ul a:after {
 		display: none;
 	}
+
 	/* End header */
 
 	#services .service-bottom .service-item {
 		flex-basis: 22%;
 		margin: 1.5%;
 	}
+
 	/*---------------------- starts here ---follow me icons on footer----------------*/
 }
+
 .social-icons {
-    margin: 0;
-    padding: 0;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    list-style: none;
-  }
-  
-  .social-icons li {
-    margin: 2px 6px;
-    padding: 0;
-    overflow: visible;
-  }
-  
-  .social-icons li a {
-    display: block;
-    height: 26px;
-    line-height: 26px;
-    width: 26px;
-    font-size: 18px;
-    text-align: center;
-    color: #4d555a;
-    text-decoration: none;
-    -webkit-transition: all 0.2s ease;
-    transition: all 0.2s ease;
-  }
-  
-  .social-icons li i {
-    line-height: inherit;
-  }
-  
-  .social-icons.social-icons-sm li {
-    margin: 2px 4px;
-  }
-  
-  .social-icons.social-icons-sm li a {
-    font-size: 14px;
-  }
-  
-  .social-icons.social-icons-lg li a {
-    width: 34px;
-    height: 34px;
-    line-height: 34px;
-    font-size: 22px;
-  }
-  
-  .social-icons.social-icons-light li a {
-    color: #eee;
-  }
-  
-  .social-icons.social-icons-muted li a {
-    color: #aab1b8;
-  }
-  
-  .social-icons li:hover a {
-    color: #999;
-  }
-  
-  .social-icons li:hover.social-icons-twitter a, .social-icons.social-icons-colored li.social-icons-twitter a {
-    color: #00ACEE;
-  }
-  
-  .social-icons li:hover.social-icons-facebook a, .social-icons.social-icons-colored li.social-icons-facebook a {
-    color: #3B5998;
-  }
-  
-  .social-icons li:hover.social-icons-linkedin a, .social-icons.social-icons-colored li.social-icons-linkedin a {
-    color: #0E76A8;
-  }
-  
-  .social-icons li:hover.social-icons-rss a, .social-icons.social-icons-colored li.social-icons-rss a {
-    color: #EE802F;
-  }
-  
-  .social-icons li:hover.social-icons-dribbble a, .social-icons.social-icons-colored li.social-icons-dribbble a {
-    color: #ea4c89;
-  }
-  
-  .social-icons li:hover.social-icons-github a, .social-icons.social-icons-colored li.social-icons-github a {
-    color: #333333;
-  }
-  
-  .social-icons li:hover.social-icons-behance a, .social-icons.social-icons-colored li.social-icons-behance a {
-    color: #053eff;
-  }
-  
-  .social-icons li:hover.social-icons-google a, .social-icons.social-icons-colored li.social-icons-google a {
-    color: #DD4B39;
-  }
-  
-  .social-icons li:hover.social-icons-pinterest a, .social-icons.social-icons-colored li.social-icons-pinterest a {
-    color: #cc2127;
-  }
-  
-  .social-icons li:hover.social-icons-youtube a, .social-icons.social-icons-colored li.social-icons-youtube a {
-    color: #C4302B;
-  }
-  
-  .social-icons li:hover.social-icons-instagram a, .social-icons.social-icons-colored li.social-icons-instagram a {
-    color: #3F729B;
-  }
-  
-  .social-icons li:hover.social-icons-skype a, .social-icons.social-icons-colored li.social-icons-skype a {
-    color: #00AFF0;
-  }
-  
-  .social-icons li:hover.social-icons-email a, .social-icons.social-icons-colored li.social-icons-email a {
-    color: #6567A5;
-  }
-  
-  .social-icons li:hover.social-icons-vk a, .social-icons.social-icons-colored li.social-icons-vk a {
-    color: #2B587A;
-  }
-  
-  .social-icons li:hover.social-icons-xing a, .social-icons.social-icons-colored li.social-icons-xing a {
-    color: #126567;
-  }
-  
-  .social-icons li:hover.social-icons-tumblr a, .social-icons.social-icons-colored li.social-icons-tumblr a {
-    color: #34526F;
-  }
-  
-  .social-icons li:hover.social-icons-reddit a, .social-icons.social-icons-colored li.social-icons-reddit a {
-    color: #C6C6C6;
-  }
-  
-  .social-icons li:hover.social-icons-delicious a, .social-icons.social-icons-colored li.social-icons-delicious a {
-    color: #205CC0;
-  }
-  
-  .social-icons li:hover.social-icons-stumbleupon a, .social-icons.social-icons-colored li.social-icons-stumbleupon a {
-    color: #F74425;
-  }
-  
-  .social-icons li:hover.social-icons-digg a, .social-icons.social-icons-colored li.social-icons-digg a {
-    color: #191919;
-  }
-  
-  .social-icons li:hover.social-icons-blogger a, .social-icons.social-icons-colored li.social-icons-blogger a {
-    color: #FC4F08;
-  }
-  
-  .social-icons li:hover.social-icons-flickr a, .social-icons.social-icons-colored li.social-icons-flickr a {
-    color: #FF0084;
-  }
-  
-  .social-icons li:hover.social-icons-vimeo a, .social-icons.social-icons-colored li.social-icons-vimeo a {
-    color: #86C9EF;
-  }
-  
-  .social-icons li:hover.social-icons-yahoo a, .social-icons.social-icons-colored li.social-icons-yahoo a {
-    color: #720E9E;
-  }
-  
-  .social-icons li:hover.social-icons-apple a, .social-icons.social-icons-colored li.social-icons-apple a {
-    color: #000;
-  }
-  
-  .social-icons.social-icons-colored li:hover a {
-    color: #999;
-  }
-  
-  body:not(.rtl) .social-icons li:first-child {
-    margin-left: 0px;
-  }
-  
-  body:not(.rtl) .social-icons li:last-child {
-    margin-right: 0px;
-  }
-  
-  .rtl .social-icons li:first-child {
-    margin-right: 0px;
-  }
-  
-  .rtl .social-icons li:last-child {
-    margin-left: 0px;
-  }
+	position: absolute;
+	font-size: 20px;
+	margin: 0;
+	padding: 0;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	list-style: none;
+	color: #1898e8;
+
+}
+
+.social-icons li {
+	margin: 2px 6px;
+	padding: 0;
+	/* overflow: visible; */
+}
+
+.social-icons li a {
+	display: block;
+	height: 26px;
+	line-height: 26px;
+	width: 26px;
+	font-size: 18px;
+	text-align: center;
+	color: #4d555a;
+	text-decoration: none;
+	-webkit-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+
+.social-icons li i {
+	line-height: inherit;
+}
+
+.social-icons.social-icons-sm li {
+	margin: 2px 4px;
+}
+
+.social-icons.social-icons-sm li a {
+	font-size: 14px;
+}
+
+.social-icons.social-icons-lg li a {
+	width: 34px;
+	height: 34px;
+	line-height: 34px;
+	font-size: 22px;
+}
+
+.social-icons.social-icons-light li a {
+	color: #eee;
+}
+
+.icon.facebook {
+	fill: #3b5998;
+	/* Change the fill color for Facebook icon */
+	left: 50px;
+	/* Adjust the position of the Facebook icon */
+	top: 50px;
+	/* Adjust the position of the Facebook icon */
+}
+
+.icon.twitter {
+	fill: #1da1f2;
+	/* Change the fill color for Twitter icon */
+	left: 100px;
+	/* Adjust the position of the Twitter icon */
+	top: 50px;
+	/* Adjust the position of the Twitter icon */
+}
+
+.icon.instagram {
+	fill: #c32aa3;
+	/* Change the fill color for Instagram icon */
+	left: 150px;
+	/* Adjust the position of the Instagram icon */
+	top: 50px;
+	/* Adjust the position of the Instagram icon */
+}
+
+.social-icons.social-icons-muted li a {
+	color: #aab1b8;
+}
+
+.social-icons li:hover a {
+	color: #999;
+}
+
+.social-icons li:hover.social-icons-twitter a,
+.social-icons.social-icons-colored li.social-icons-twitter a {
+	color: #00ACEE;
+}
+
+.social-icons li:hover.social-icons-facebook a,
+.social-icons.social-icons-colored li.social-icons-facebook a {
+	color: #3B5998;
+}
+
+.social-icons li:hover.social-icons-linkedin a,
+.social-icons.social-icons-colored li.social-icons-linkedin a {
+	color: #0E76A8;
+}
+
+.social-icons li:hover.social-icons-rss a,
+.social-icons.social-icons-colored li.social-icons-rss a {
+	color: #EE802F;
+}
+
+.social-icons li:hover.social-icons-dribbble a,
+.social-icons.social-icons-colored li.social-icons-dribbble a {
+	color: #ea4c89;
+}
+
+.social-icons li:hover.social-icons-github a,
+.social-icons.social-icons-colored li.social-icons-github a {
+	color: #333333;
+}
+
+.social-icons li:hover.social-icons-behance a,
+.social-icons.social-icons-colored li.social-icons-behance a {
+	color: #053eff;
+}
+
+.social-icons li:hover.social-icons-google a,
+.social-icons.social-icons-colored li.social-icons-google a {
+	color: #DD4B39;
+}
+
+.social-icons li:hover.social-icons-pinterest a,
+.social-icons.social-icons-colored li.social-icons-pinterest a {
+	color: #cc2127;
+}
+
+.social-icons li:hover.social-icons-youtube a,
+.social-icons.social-icons-colored li.social-icons-youtube a {
+	color: #C4302B;
+}
+
+.social-icons li:hover.social-icons-instagram a,
+.social-icons.social-icons-colored li.social-icons-instagram a {
+	color: #3F729B;
+}
+
+.social-icons li:hover.social-icons-skype a,
+.social-icons.social-icons-colored li.social-icons-skype a {
+	color: #00AFF0;
+}
+
+.social-icons li:hover.social-icons-email a,
+.social-icons.social-icons-colored li.social-icons-email a {
+	color: #6567A5;
+}
+
+.social-icons li:hover.social-icons-vk a,
+.social-icons.social-icons-colored li.social-icons-vk a {
+	color: #2B587A;
+}
+
+.social-icons li:hover.social-icons-xing a,
+.social-icons.social-icons-colored li.social-icons-xing a {
+	color: #126567;
+}
+
+.social-icons li:hover.social-icons-tumblr a,
+.social-icons.social-icons-colored li.social-icons-tumblr a {
+	color: #34526F;
+}
+
+.social-icons li:hover.social-icons-reddit a,
+.social-icons.social-icons-colored li.social-icons-reddit a {
+	color: #C6C6C6;
+}
+
+.social-icons li:hover.social-icons-delicious a,
+.social-icons.social-icons-colored li.social-icons-delicious a {
+	color: #205CC0;
+}
+
+.social-icons li:hover.social-icons-stumbleupon a,
+.social-icons.social-icons-colored li.social-icons-stumbleupon a {
+	color: #F74425;
+}
+
+.social-icons li:hover.social-icons-digg a,
+.social-icons.social-icons-colored li.social-icons-digg a {
+	color: #191919;
+}
+
+.social-icons li:hover.social-icons-blogger a,
+.social-icons.social-icons-colored li.social-icons-blogger a {
+	color: #FC4F08;
+}
+
+.social-icons li:hover.social-icons-flickr a,
+.social-icons.social-icons-colored li.social-icons-flickr a {
+	color: #FF0084;
+}
+
+.social-icons li:hover.social-icons-vimeo a,
+.social-icons.social-icons-colored li.social-icons-vimeo a {
+	color: #86C9EF;
+}
+
+.social-icons li:hover.social-icons-yahoo a,
+.social-icons.social-icons-colored li.social-icons-yahoo a {
+	color: #720E9E;
+}
+
+.social-icons li:hover.social-icons-apple a,
+.social-icons.social-icons-colored li.social-icons-apple a {
+	color: #000;
+}
+
+.social-icons.social-icons-colored li:hover a {
+	color: #999;
+}
+
+body:not(.rtl) .social-icons li:first-child {
+	margin-left: 0px;
+}
+
+body:not(.rtl) .social-icons li:last-child {
+	margin-right: 0px;
+}
+
+.rtl .social-icons li:first-child {
+	margin-right: 0px;
+}
+
+.rtl .social-icons li:last-child {
+	margin-left: 0px;
+}
+
 /*---------------------- starts here ---follow me icons on footer---------------- */

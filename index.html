@@ -56,7 +56,7 @@
       <div class="service-top">
         <h1 class="section-title">Se<span>rvic</span>es</h1>
         <p>  
-           I chose Software engineering strikingly from the very beginning of Your Portfolio aiming at simplicity and style. Now as Your Protfolio is growing, Your are very closer to see that Your favorite platform's enriching its functionalities and will meet user's needs."</p>
+          I chose Software engineering strikingly from the very beginning of Your Portfolio aiming at simplicity and style. Now as Your Protfolio is growing, Your are very closer to see that Your favorite platform's enriching its functionalities and will meet user's needs."</p>
       </div>
       <div class="service-bottom">
         <div class="service-item">
@@ -108,9 +108,9 @@
           <div class="Protfolio-info">
             <h1>SENTIMENTAL ANALYSIS </h1>
             <h2>License plate recognition helps to identify vehicles and assists in vehicle tracking and activities analysis
-               for surveillance and security purposes. As the demand for traffic management and safe vehicle monitoring systems 
-               continues to grow, vehicle handling has become a potential research challenge. Predominantly, it is done manually 
-               by a human agent which is laborious, time-consuming, and erroneous. 
+              for surveillance and security purposes. As the demand for traffic management and safe vehicle monitoring systems 
+              continues to grow, vehicle handling has become a potential research challenge. Predominantly, it is done manually 
+              by a human agent which is laborious, time-consuming, and erroneous. 
               On the other hand, an automated system can identify vehicle license plates efficiently, in real-time  </h2>
             <p></p>
           </div>
@@ -138,8 +138,8 @@
             <h1>FIGMA  DESIGNER</h1>
             <h2> KLAB INTERNSHIP</h2>
             <p>My first design refer to this Protfolio which is the one I have designed during my interneship program 
-               and ready to continue designing more than one for big company's and personal Protfolio, whether mobile or
-               web not only that but also for different fields that needs the design to be developed.
+              and ready to continue designing more than one for big company's and personal Protfolio, whether mobile or
+            web not only that but also for different fields that needs the design to be developed.
             </p>
           </div>
           <div class="Protfolio-img">
@@ -151,10 +151,10 @@
             <h1>MOBILE DEVELOPER </h1>
             <h2>FLUTTER AT  UNILAK</h2>
             <p>Mobile App Developer at UNILAK, Back-End using Django despite of Firebase which is mostly being used at market place,
-               Housemaid app i have developed for  hiring a housemaid and house sitter for some period of time when you are busy with work 
-               or not around at your place , we will help those who are out for vacancies and those who are busy with work to find 
-               best fitting housemaid/housemate with good review on his profile and best experience of working in different houses 
-               with different  families. </p>
+              Housemaid app i have developed for  hiring a housemaid and house sitter for some period of time when you are busy with work 
+              or not around at your place , we will help those who are out for vacancies and those who are busy with work to find 
+              best fitting housemaid/housemate with good review on his profile and best experience of working in different houses 
+              with different  families. </p>
           </div>
           <div class="Protfolio-img">
             <img src="./img/mobile-application-development-mobile-app-development.png" alt="img">
@@ -186,10 +186,33 @@
     </div>
   </section>
   <!-- End About Section -->
+  <div class="container">
+    <form onsubmit="sendEmail(); reset (); return false" >
+  
+      <label for="Name"> Name</label>
+      <input type="text" id="fullname" name="name" placeholder="Your Full name.." required>
+  
+      <label for="email">Email</label>
+      <input type="text" id="email" name="email" placeholder="email.." required>
+  
+      <label for="country">Country</label>
+      <select id="country" name="country" required >
+        <option value="rwanda">Rwanda</option>
+        <option value="burundi">Burundi</option>
+        <option value="uganda">Uganda</option>
+        <option value="kenya">Kenya</option>
+        <option value="tanzania">Tanzania</option>
+      </select>
+  
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:150px"></textarea>
+  
+      <input type="submit" value = "Submit">
+  
+    </form>
+  </div>
 
-    <!-- Contact Form start-->
-    
-   <!--  Contact Form ends -->
+  <!-- Contact Form ends -->
 
   <!-- Footer -->
   <section id="footer">
@@ -200,18 +223,34 @@
       <h2> Follow Me On Social Media</h2>
       <div class="social-icon">
         <ul class="social-icons social-icons-muted justify-content-center justify-content-md-start">
-          <li ><a data-bs-toggle="tooltip" href="" target="_blank" title="Twitter"><i class="bi bi-twitter"></i></a></li>
+          <!-- <li ><a data-bs-toggle="tooltip" href="" target="_blank" title="Twitter"><i class="bi bi-twitter"></i></a></li> -->
           <li ><a data-bs-toggle="tooltip" href="https://www.linkedin.com/in/nizeyimana-moise-854678172/" target="_blank" title="Linkedin"><i class="bi bi-linkedin"></i></a></li>
           <li ><a data-bs-toggle="tooltip" href="https://github.com/250moise/KLAB-2022UNILAK" target="_blank" title="GitHub"><i class="bi bi-github"></i></a></li>
           <li ><a data-bs-toggle="tooltip" href="" target="_blank" title="Pinterest"><i class="bi bi-Pinterest"></i></a></li>
           <li ><a data-bs-toggle="tooltip" href="https://stackoverflow.com/users/15547023/moise" target="_blank" title="Stack Overflow"><i class="bi bi-Stack Overflow"></i></a></li>
         </ul>
       </div>
-                                <p>   Copyright ©  october 2022 N.Moise All rights reserved</p>
+                                <p>   Copyright ©  october 2022 Moise NIZEYIMANA All rights reserved</p>
     </div>
   </section>
   <!-- End Footer -->
   <script src="./app.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    function sendEmail(){
+      Email.send({
+    Host : "smtp.gmail.com",
+    Username : "Moise",
+    Password : "Kigali1643",
+    To : 'aubuin0@gmail.com',
+    From : document.getElementById("Email").value,
+    Subject : "Client Email Interest in your projects",
+    Body : "Check out your gmail inbox"
+}).then(
+  message => alert(message)
+);
+    }
+  </script>
 </body>
 
 </html>
